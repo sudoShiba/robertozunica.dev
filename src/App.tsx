@@ -13,9 +13,6 @@ const App = () => {
         <Hero />
         <SocialLinks />
       </header>
-      <main>
-        <Story />
-      </main>
       <Footer />
     </>
   )
