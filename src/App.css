@@ -57,6 +57,16 @@
     align-items: center;
 }
 
+.col-1:first-child {
+    margin-top: 18rem;
+    align-items: self-start;
+}
+
+.col-1:first-child::before {
+    top: -21rem;
+    height: 22rem;
+}
+
 .story {
     border: 1pt solid var(--main-color);
     border-radius: .5rem;
@@ -71,6 +81,11 @@
         flex-direction: row;
     }
     
+    .icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
     img, p { 
         margin: .5rem;
         border-radius: .5rem;
@@ -84,6 +99,15 @@
     width: calc(20vw - 4rem);
 
     div { flex-direction: column }
+    div:has(.icon) {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        h1 {
+            margin-bottom: 0;
+        }
+    }
 }
 
 
