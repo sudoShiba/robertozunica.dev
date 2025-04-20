@@ -1,0 +1,40 @@
+:root, html, body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: dark light;
+  color: var(--main-color);
+  background-color: var(--background-color);
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --main-color: #ffffffde;
+  --secondary-color: #ffbe44;
+  --background-color: #242424;
+
+  --light-main-color: #213547;
+  --light-background-color: #ffffff;
+
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+
+  transition: color 0.3s ease-in-out;
+
+  :visited { color: var(--secondary-color) }
+}
+
+a:hover { color: #ffa500 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: var(--light-main-color);
+    --background-color: var(--light-background-color);
+  }
+}
