@@ -9,11 +9,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: 0;
     }
 
     .hero {
         text-align: center;
+
+        z-index: 1;
+        position: inherit;
     
         h1 {
             font-size: 5rem;
@@ -33,6 +36,7 @@
 .site {
     display: flex;
     align-items: center;
+    background-color: var(--background-color);
 
     span { margin-left: 0.25rem }
 }
