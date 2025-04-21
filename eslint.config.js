@@ -1,4 +1,3 @@
-import css from "@eslint/css"
 import js from "@eslint/js"
 import importPlugin from "eslint-plugin-import"
 import preferArrow from "eslint-plugin-prefer-arrow"
@@ -11,8 +10,8 @@ import tseslint from "typescript-eslint"
 export default tseslint.config(
   { ignores: ["dist", "vite-env"] },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended, css.configs.recommended],
-    files: ["**/*.{js,ts,tsx,css}"],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ["**/*.{js,ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser
@@ -22,12 +21,10 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
       "react": reactPlugin,
       "prefer-arrow": preferArrow,
-      "import": importPlugin,
-      "css": css
+      "import": importPlugin
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      ...css.configs.recommended.rules,
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true }
