@@ -1,4 +1,4 @@
-import { IconDeviceDesktop, IconBook, IconAward } from "@tabler/icons-react"
+import { IconPuzzle, IconBook, IconBriefcase } from "@tabler/icons-react"
 import React from "react"
 
 import { SliderProps } from "../../types/types"
@@ -19,7 +19,7 @@ const Slider: React.FC<SliderProps> = ({ handleToggle, visibleColumn }) => {
         className={`slider-button ${visibleColumn === "col-1" ? "active" : ""}`}
         onClick={() => handleToggle("col-1")}
       >
-        <IconDeviceDesktop size={24} />
+        <IconBriefcase size={24} />
       </button>
       <button
         className={`slider-button ${visibleColumn === "col-2" ? "active" : ""}`}
@@ -31,7 +31,7 @@ const Slider: React.FC<SliderProps> = ({ handleToggle, visibleColumn }) => {
         className={`slider-button ${visibleColumn === "col-3" ? "active" : ""}`}
         onClick={() => handleToggle("col-3")}
       >
-        <IconAward size={24} />
+        <IconPuzzle size={24} />
       </button>
     </div>
   )
