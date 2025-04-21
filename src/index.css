@@ -14,6 +14,7 @@
   --main-color: #ffffffde;
   --secondary-color: #ffbe44;
   --background-color: #242424;
+  --hover-color: #ffa500;
 
   --light-main-color: #213547;
   --light-background-color: #ffffff;
@@ -29,12 +30,12 @@ a {
   :visited { color: var(--secondary-color) }
 }
 
-a:hover { color: #ffa500 }
+a:hover { color: var(--hover-color) }
 
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --main-color: var(--light-main-color);
-    --background-color: var(--light-background-color);
+  :root, html, body {
+    --main-color: var(--light-main-color) !important;
+    --background-color: var(--light-background-color) !important;
   }
 }

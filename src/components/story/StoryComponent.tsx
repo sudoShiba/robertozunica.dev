@@ -1,13 +1,16 @@
 import React from "react"
 
-import { StoryComponentProps } from "../types/types.ts"
+import { StoryComponentProps } from "../../types/types.ts"
 
-const StoryComponent: React.FC<StoryComponentProps> = ({ title, children, size, image, icon}) => {
+const StoryComponent: React.FC<StoryComponentProps> = ({ title, subtitle, date, children, size, image}) => {
   return (
     <section className={"story size-" + size}>
       <div>
-        {icon && <img src={icon} className="icon" alt={title} />}
         <h1>{title}</h1>
+        <div>
+          {subtitle && <h3>{subtitle}</h3>}
+          {date && <h4>{date}</h4>}
+        </div>
       </div>
       <div>
         {image && <img src={image} alt={title} />}
