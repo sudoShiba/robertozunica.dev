@@ -33,19 +33,19 @@ const Story: React.FC = () => {
               <Site url="https://quivr.be" />
             </StoryComponent>
             <StoryComponent
-              title="ULYSSIS"
-              date="October 2024 - Present"
-              image="assets/ULYSSIS.jpg"
-              size={1}
+              title="Teacher's Aid"
+              subtitle="Codefever VZW"
+              date="September 2023 - Present"
+              size={2}
             >
               <p>
-                ULYSSIS is a student organization at KU Leuven that focuses on making computer science and open source more accessible to students. We combine technical projects with workshops and events to share technology in a hands-on, approachable way within the student community.
+                I work as a teacher's aid at Codefever, where I assist in teaching programming and computer science to students. This role allows me to share my knowledge and passion for technology with others.
               </p>
-              <Site url="https://ulyssis.org" />
+              <Site url="https://codefever.be" />
             </StoryComponent>
           </>)}
         {(visibleColumn !== "col-1" && visibleColumn !== "col-3") && (
-          <div>
+          <>
             <StoryComponent
               title="Bachelor's Degree in Computer Science"
               subtitle="KU Leuven"
@@ -64,10 +64,10 @@ const Story: React.FC = () => {
             >
               I graduated from high school with a focus on Maths and Sciences. This background has equipped me with strong analytical and problem-solving skills, which I apply in my studies and projects.
             </StoryComponent>
-          </div>
+          </>
         )}
         {visibleColumn === "col-3" && (
-          <div>
+          <>
             <StoryComponent
               title="BEST coding challenge winner"
               subtitle="BEST Leuven"
@@ -75,6 +75,17 @@ const Story: React.FC = () => {
               size={2}
             >
               Together with two fellow students, we won the BEST-NMBS coding challenge on November 26. We had to solve small coding challenges in Python to earn points, and we ended up scoring the most points.
+            </StoryComponent>
+            <StoryComponent
+              title="ULYSSIS"
+              date="October 2024 - Present"
+              image="assets/ULYSSIS.jpg"
+              size={1}
+            >
+              <p>
+                ULYSSIS is a student organization at KU Leuven that focuses on making computer science and open source more accessible to students. We combine technical projects with workshops and events to share technology in a hands-on, approachable way within the student community.
+              </p>
+              <Site url="https://ulyssis.org" />
             </StoryComponent>
             <StoryComponent
               title="Best Youth Developer 2024"
@@ -88,7 +99,28 @@ const Story: React.FC = () => {
               </p>
               <Site url="https://www.leuvenactueel.be/nieuws/leuven/de-lijn-bekroont-top-talenten-in-best-youth-developer-challenge?nid=17897" />
             </StoryComponent>
-          </div>
+            <StoryComponent
+              title="Youth Leader"
+              subtitle="KSA Kriko"
+              date="2023 - Present"
+              size={2}>
+              <p>
+                As a leader at KSA, I organize and guide activities for young people. I'm also the group's webmaster and have been responsible for coordinating a specific age group. I also have
+              </p>
+              <Site url="https://ksa-kriko.be" />
+            </StoryComponent>
+            <StoryComponent
+              title="Youth Camp Animator"
+              subtitle="Kazou"
+              date="2023 - Present"
+              image="assets/kazou.jpeg"
+              size={1}>
+              <p>
+                As a volunteer at Kazou, I help organize and supervise youth camps, focusing on creating a fun and safe environment for all participants. I also hold a certified youth animator's certificate recognized by the Flemish government.
+              </p>
+              <Site url="https://kazou.be" />
+            </StoryComponent>
+          </>
         )}
       </article>
     </>

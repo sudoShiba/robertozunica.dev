@@ -60,7 +60,7 @@ const options: ISourceOptions = {
       random: true
     },
     collisions: {
-      enable: true
+      enable: false
     },
     number: {
       value: 200,
