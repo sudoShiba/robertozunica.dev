@@ -91,6 +91,8 @@
         img {
             max-width: 100%;
         }
+
+        width: inherit !important;
     }
 }
 
