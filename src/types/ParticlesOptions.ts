@@ -7,7 +7,7 @@ const options: ISourceOptions = {
     color: isLightMode ? "#ffffff" : "#242424"
   },
   fullScreen: {
-    enable: false
+    enable: true
   },
   interactivity: {
     detectsOn: "window",
