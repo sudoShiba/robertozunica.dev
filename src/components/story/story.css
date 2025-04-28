@@ -82,17 +82,29 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
+    .story {
+        width: inherit !important;
+    }
+}
+
+@media (max-width: 500px) {
     .story {
         div {
             flex-direction: column;
+
+            div {
+                flex-direction: row;
+            }
         }
 
         img {
             max-width: 100%;
         }
 
-        width: inherit !important;
+        h1 {
+            text-align: center;
+        }
     }
 }
 
