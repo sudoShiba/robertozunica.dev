@@ -1,8 +1,6 @@
 import { ISourceOptions } from "@tsparticles/engine"
 
-const isLightMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
-
-const options: ISourceOptions = {
+export const getParticlesOptions = (isLightMode: boolean): ISourceOptions => ({
   background: {
     color: isLightMode ? "#ffffff" : "#242424"
   },
@@ -52,7 +50,6 @@ const options: ISourceOptions = {
         opacity: 0.01,
         frequency: 0.75
       }
-
     },
     move: {
       enable: true,
@@ -81,6 +78,4 @@ const options: ISourceOptions = {
     }
   },
   detectRetina: true
-}
-
-export default options
+})
