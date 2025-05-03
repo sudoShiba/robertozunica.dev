@@ -6,7 +6,7 @@ const StoryComponent: React.FC<StoryComponentProps> = ({ title, subtitle, date, 
   return (
     <section className={"story size-" + size}>
       <div>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <div>
           {subtitle && <h3>{subtitle}</h3>}
           {date && <h4>{date}</h4>}
