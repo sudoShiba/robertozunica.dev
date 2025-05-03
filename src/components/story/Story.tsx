@@ -98,6 +98,7 @@ const Story: React.FC = () => {
                 Together with my randomly assembled team, we were the winners of the De Lijn Best Youth Developer Challenge 2024.
               </p>
               <Site url="https://www.leuvenactueel.be/nieuws/leuven/de-lijn-bekroont-top-talenten-in-best-youth-developer-challenge?nid=17897" />
+              <Site url="https://pub.be/nl/de-lijn-bekroont-toptalenten-in-best-youth-developer-challenge/" />
             </StoryComponent>
             <StoryComponent
               title="Youth Leader"
