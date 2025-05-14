@@ -1,4 +1,4 @@
-# Roberto Zunica portfolio – robertozunica.dev
+# Roberto Zunica portfolio – robertozunica.dev (vervaeal was here)
 
 ## Useful commands
 * Development build: `npm run dev`
