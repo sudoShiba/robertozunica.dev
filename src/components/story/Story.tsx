@@ -51,7 +51,7 @@ const Story: React.FC = () => {
               subtitle="KU Leuven"
               date="2024 - Present"
               size={1}
-              image="https://wms.cs.kuleuven.be/cs/afbeeldingen/img-3869.jpg"
+{/*               image="https://wms.cs.kuleuven.be/cs/afbeeldingen/img-3869.jpg" */}
             >
               I am currently pursuing a Bachelor's degree in Computer Science at KU Leuven. My studies have provided me with a solid foundation in programming, algorithms, and software development. I am passionate about learning and applying new technologies to solve real-world problems.
               <Site url="https://wms.cs.kuleuven.be/" />
