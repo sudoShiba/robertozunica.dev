@@ -1,13 +1,29 @@
 import React, { useState } from "react"
 
 import "./story.css"
+import {ColumnKey, columnMap} from "../../types/types.ts"
 
 import Site from "./Site.tsx"
 import Slider from "./Slider.tsx"
 import StoryComponent from "./StoryComponent.tsx"
 
+
+const getColumnFromUrl = (): "col-1" | "col-2" | "col-3" => {
+  const params = new URLSearchParams(window.location.search)
+  const col = params.get("column") as ColumnKey | null
+
+  if (col && col in columnMap)
+    return columnMap[col]
+
+  return "col-2" // Default to "col-2" if no valid column is found
+}
+
 const Story: React.FC = () => {
   const [visibleColumn, setVisibleColumn] = useState<"col-1" | "col-2" | "col-3">("col-2")
+
+  React.useEffect(() => {
+    setVisibleColumn(getColumnFromUrl())
+  }, [])
 
   const handleToggle = (column: "col-1" | "col-2" | "col-3") => {
     setVisibleColumn(column)

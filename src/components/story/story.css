@@ -68,7 +68,7 @@
         object-fit: cover;
     }
 
-    img, p { 
+    img, aside { 
         margin: .5rem;
         border-radius: .5rem;
         

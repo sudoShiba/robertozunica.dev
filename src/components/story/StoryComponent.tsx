@@ -14,7 +14,7 @@ const StoryComponent: React.FC<StoryComponentProps> = ({ title, subtitle, date, 
       </div>
       <div>
         {image && <img src={image} alt={title} />}
-        <p>{children}</p>
+        <aside>{children}</aside>
       </div>
     </section>
   )
