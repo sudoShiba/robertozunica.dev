@@ -7,7 +7,6 @@ import Site from "./Site.tsx"
 import Slider from "./Slider.tsx"
 import StoryComponent from "./StoryComponent.tsx"
 
-
 const getColumnFromUrl = (): Columns => {
   const params = new URLSearchParams(window.location.search)
   const col = params.get("column") as ColumnKey | null
