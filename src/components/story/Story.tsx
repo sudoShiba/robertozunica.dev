@@ -78,7 +78,7 @@ const Story: React.FC = () => {
               date="2018 - 2024"
               size={1}
               image="assets/SLHD.jpeg"
-              caption="Sint-Leo Hemelsdaele &copy; Sint-Leo Hemelsdaele"
+              caption="Sint-Leo Hemelsdaele"
             >
               I graduated from high school with a focus on Maths and Sciences. This background has equipped me with strong analytical and problem-solving skills, which I apply in my studies and projects.
               <Site url="https://sint-leo.be/" />
@@ -99,6 +99,7 @@ const Story: React.FC = () => {
               title="ULYSSIS"
               date="October 2024 - Present"
               image="assets/ULYSSIS.jpg"
+              caption="the ULYSSIS team at Walibi during teambuilding"
               size={1}
             >
               <p>
@@ -111,6 +112,7 @@ const Story: React.FC = () => {
               subtitle="De Lijn"
               date="January 2024"
               image="assets/delijn.jpeg"
+              caption="I am the fourth from the left"
               size={2}
             >
               <p>
