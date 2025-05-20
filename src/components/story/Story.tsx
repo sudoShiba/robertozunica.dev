@@ -1,14 +1,13 @@
 import React, { useState } from "react"
 
 import "./story.css"
-import {ColumnKey, columnMap} from "../../types/types.ts"
+import {ColumnKey, columnMap, Columns} from "../../types/types.ts"
 
 import Site from "./Site.tsx"
 import Slider from "./Slider.tsx"
 import StoryComponent from "./StoryComponent.tsx"
 
-
-const getColumnFromUrl = (): "col-1" | "col-2" | "col-3" => {
+const getColumnFromUrl = (): Columns => {
   const params = new URLSearchParams(window.location.search)
   const col = params.get("column") as ColumnKey | null
 
@@ -19,13 +18,13 @@ const getColumnFromUrl = (): "col-1" | "col-2" | "col-3" => {
 }
 
 const Story: React.FC = () => {
-  const [visibleColumn, setVisibleColumn] = useState<"col-1" | "col-2" | "col-3">("col-2")
+  const [visibleColumn, setVisibleColumn] = useState<Columns>("col-2")
 
   React.useEffect(() => {
     setVisibleColumn(getColumnFromUrl())
   }, [])
 
-  const handleToggle = (column: "col-1" | "col-2" | "col-3") => {
+  const handleToggle = (column: Columns) => {
     setVisibleColumn(column)
   }
 
@@ -67,7 +66,8 @@ const Story: React.FC = () => {
               subtitle="KU Leuven"
               date="2024 - Present"
               size={1}
-{/*               image="https://wms.cs.kuleuven.be/cs/afbeeldingen/img-3869.jpg" */}
+              image="assets/KUL.jpg"
+              caption="Department of Computer Science &copy; KU Leuven"
             >
               I am currently pursuing a Bachelor's degree in Computer Science at KU Leuven. My studies have provided me with a solid foundation in programming, algorithms, and software development. I am passionate about learning and applying new technologies to solve real-world problems.
               <Site url="https://wms.cs.kuleuven.be/" />
@@ -77,7 +77,8 @@ const Story: React.FC = () => {
               subtitle="Sint-Leo Hemelsdaele"
               date="2018 - 2024"
               size={1}
-              image="assets/SLHD.jpeg"
+              // image="assets/SLHD.jpeg"
+              // caption="Sint-Leo Hemelsdaele &copy; Sint-Leo Hemelsdaele"
             >
               I graduated from high school with a focus on Maths and Sciences. This background has equipped me with strong analytical and problem-solving skills, which I apply in my studies and projects.
               <Site url="https://sint-leo.be/" />

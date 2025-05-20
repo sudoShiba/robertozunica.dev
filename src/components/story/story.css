@@ -62,15 +62,26 @@
         }
     }
 
-    img {
+    figure {
         max-width: 30%;
         height: auto;
         object-fit: cover;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: .5rem;
+        }
+
+        figcaption {
+            font-size: x-small;
+            text-align: center;
+            font-style: italic;
+        }
     }
 
-    img, aside { 
+    figure, aside { 
         margin: .5rem;
-        border-radius: .5rem;
         
         p {
             margin: 0;
@@ -98,7 +109,7 @@
             }
         }
 
-        img {
+        figure {
             max-width: 100%;
         }
 
