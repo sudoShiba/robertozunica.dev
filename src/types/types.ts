@@ -5,6 +5,7 @@ export interface StoryComponentProps {
     children: React.ReactNode;
     size: 1 | 2 | 3;
     image?: string;
+    caption?: string;
 }
 
 export interface SliderProps {
