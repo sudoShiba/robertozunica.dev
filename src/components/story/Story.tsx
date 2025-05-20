@@ -77,8 +77,8 @@ const Story: React.FC = () => {
               subtitle="Sint-Leo Hemelsdaele"
               date="2018 - 2024"
               size={1}
-              // image="assets/SLHD.jpeg"
-              // caption="Sint-Leo Hemelsdaele &copy; Sint-Leo Hemelsdaele"
+              image="assets/SLHD.jpeg"
+              caption="Sint-Leo Hemelsdaele &copy; Sint-Leo Hemelsdaele"
             >
               I graduated from high school with a focus on Maths and Sciences. This background has equipped me with strong analytical and problem-solving skills, which I apply in my studies and projects.
               <Site url="https://sint-leo.be/" />
