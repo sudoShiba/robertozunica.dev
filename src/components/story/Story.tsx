@@ -91,9 +91,14 @@ const Story: React.FC = () => {
               title="BEST coding challenge winner"
               subtitle="BEST Leuven"
               date="November 2024"
-              size={2}
+              size={1}
+              image="assets/BEST2024.jpg"
+              caption="Rik, Thomas and I recieving our prize"
             >
-              Together with two fellow students, we won the BEST-NMBS coding challenge on November 26. We had to solve small coding challenges in Python to earn points, and we ended up scoring the most points.
+              <p>
+                Together with two fellow students <a href="https://www.linkedin.com/in/thomas-verboven/" target="_blank">Thomas Verboven</a> and Rik Van den Eynde, we won the BEST-NMBS coding challenge on November 26. The competition consisted of a series of small but tricky coding challenges in Python, each designed to test our problem-solving skills and teamwork under time pressure. Throughout the event, we managed to earn points by solving as many challenges as possible within the time limit. Our efforts paid off, and we were awarded the prize for best beginner team.
+              </p>
+              <Site url="https://bestleuven.eu" />
             </StoryComponent>
             <StoryComponent
               title="ULYSSIS"
