@@ -70,7 +70,7 @@ const Story: React.FC = () => {
               caption="Department of Computer Science &copy; KU Leuven"
             >
               I am currently pursuing a Bachelor's degree in Computer Science at KU Leuven. My studies have provided me with a solid foundation in programming, algorithms, and software development. I am passionate about learning and applying new technologies to solve real-world problems.
-              <Site url="https://wms.cs.kuleuven.be/" />
+              <Site url="https://wms.cs.kuleuven.be" />
             </StoryComponent>
             <StoryComponent
               title="High School Diploma in Maths & Sciences"
@@ -81,7 +81,7 @@ const Story: React.FC = () => {
               caption="Sint-Leo Hemelsdaele"
             >
               I graduated from high school with a focus on Maths and Sciences. This background has equipped me with strong analytical and problem-solving skills, which I apply in my studies and projects.
-              <Site url="https://sint-leo.be/" />
+              <Site url="https://sint-leo.be" />
             </StoryComponent>
           </>
         )}
