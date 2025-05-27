@@ -1,4 +1,4 @@
-import { IconBrandLinkedin, IconBrandGithub, IconBrandFacebook, IconMail } from "@tabler/icons-react"
+import { IconBrandLinkedin, IconBrandGithub, IconBrandFacebook, IconBrandDiscord, IconMail } from "@tabler/icons-react"
 import React from "react"
 
 const SocialLinks: React.FC = () => {
@@ -9,6 +9,9 @@ const SocialLinks: React.FC = () => {
       </a>
       <a href="https://github.com/sudoShiba" target="_blank">
         <IconBrandGithub />
+      </a>
+      <a href="https://discord.com/users/418793373365829633" target="_blank">
+        <IconBrandDiscord />
       </a>
       <a href="https://www.facebook.com/robertozunica06/" target="_blank">
         <IconBrandFacebook />
