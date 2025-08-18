@@ -37,8 +37,19 @@ const Story: React.FC = () => {
         {visibleColumn === "col-1" && (
           <>
             <StoryComponent
-              title="Quivr"
-              subtitle="Frontend Developer"
+              title="Intern"
+              subtitle="Groen"
+              date="August 2025"
+              size={1}
+            >
+              <p>
+                At Groen, I contribute to the development of an interactive platform that offers greater insight into citizens' voting behaviour. I help set up and maintain the SQL database, process voting data, and translate that data into a user-friendly tool. I also work with Python scripts to import and manipulate large datasets efficiently, enabling smoother data workflows within the team.
+              </p>
+              <Site url="https://groen.be" />
+            </StoryComponent>
+            <StoryComponent
+              title="Frontend Developer"
+              subtitle="Quivr"
               date="November 2024 - Present"
               size={2}
             >
