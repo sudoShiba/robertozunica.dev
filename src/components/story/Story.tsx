@@ -43,7 +43,7 @@ const Story: React.FC = () => {
               size={1}
             >
               <p>
-                At Groen, I contribute to the development of an interactive platform that offers greater insight into citizens' voting behaviour. I help set up and maintain the SQL database, process voting data, and translate that data into a user-friendly tool. I also work with Python scripts to import and manipulate large datasets efficiently, enabling smoother data workflows within the team.
+                At Groen, I contributed to the development of an interactive platform that provides insights into citizens' voting behavior. I was involved in setting up and maintaining the database, processing voting data, and translating this data with Python into a user-friendly tool with an Alpine frontend and a PHP backend. Additionally, I helped conceptualize and pitch the project.
               </p>
               <Site url="https://groen.be" />
             </StoryComponent>
