@@ -39,7 +39,7 @@ const Story: React.FC = () => {
             <StoryComponent
               title="Intern"
               subtitle="Groen"
-              date="August 2025"
+              date="August 2025 - September 2025"
               size={1}
             >
               <p>
