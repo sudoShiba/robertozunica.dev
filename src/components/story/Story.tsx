@@ -3,6 +3,8 @@ import React, { useState } from "react"
 import "./story.css"
 import {ColumnKey, columnMap, Columns} from "../../types/types.ts"
 
+import MultiStory from "./MultiStory.tsx"
+import MultiStoryItem from "./MultiStoryItem.tsx"
 import Site from "./Site.tsx"
 import Slider from "./Slider.tsx"
 import StoryComponent from "./StoryComponent.tsx"
@@ -36,17 +38,15 @@ const Story: React.FC = () => {
       <article className="story-wrapper">
         {visibleColumn === "col-1" && (
           <>
-            <StoryComponent
-              title="Intern"
-              subtitle="Groen"
-              date="August 2025 - September 2025"
-              size={1}
-            >
-              <p>
-                At Groen, I contributed to the development and conceptualization of an interactive platform that provides insight into citizens’ voting behavior. Using Python, I processed the voting data and imported it into the SQL database, and translated the data into a user-friendly web app with an Alpine.js frontend and a PHP backend. The application featured a fully responsive and dynamic design and could also be installed as a PWA.
-              </p>
-              <Site url="https://groen.be" />
-            </StoryComponent>
+            <MultiStory title="Codefever VZW" date="September 2023 - Present">
+              <MultiStoryItem title="Teacher" date="Februari 2025 - Present">
+                I became a teacher at Codefever after being an teacher's aid for a while. I've taught HTML/CSS/JS.
+              </MultiStoryItem>
+              <MultiStoryItem title="Teacher's Aid" date="September 2023 - Present">
+                As a teacher's aid at Codefever, I assist in teaching programming and computer science to students. I've been helping out various classes, from skratch to python and web development.
+              </MultiStoryItem>
+              <Site url="https://codefever.be" />
+            </MultiStory>
             <StoryComponent
               title="Frontend Developer"
               subtitle="Quivr"
@@ -59,15 +59,15 @@ const Story: React.FC = () => {
               <Site url="https://quivr.be" />
             </StoryComponent>
             <StoryComponent
-              title="Teacher's Aid"
-              subtitle="Codefever VZW"
-              date="September 2023 - Present"
-              size={2}
+              title="Intern"
+              subtitle="Groen"
+              date="August 2025 - September 2025"
+              size={1}
             >
               <p>
-                I work as a teacher's aid at Codefever, where I assist in teaching programming and computer science to students. This role allows me to share my knowledge and passion for technology with others.
+                At Groen, I contributed to the development and conceptualization of an interactive platform that provides insight into citizens’ voting behavior. Using Python, I processed the voting data and imported it into the SQL database, and translated the data into a user-friendly web app with an Alpine.js frontend and a PHP backend. The application featured a fully responsive and dynamic design and could also be installed as a PWA.
               </p>
-              <Site url="https://codefever.be" />
+              <Site url="https://groen.be" />
             </StoryComponent>
           </>)}
         {(visibleColumn !== "col-1" && visibleColumn !== "col-3") && (

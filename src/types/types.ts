@@ -8,6 +8,18 @@ export interface StoryComponentProps {
     caption?: string;
 }
 
+export interface MultiStoryProps {
+    title: string;
+    date?: string;
+    children: React.ReactNode;
+}
+
+export interface MultiStoryItemProps {
+    title: string;
+    date?: string;
+    children?: React.ReactNode;
+}
+
 export interface SliderProps {
     handleToggle: (visibleColumn: SliderProps["visibleColumn"]) => void;
     visibleColumn: "col-1" | "col-2" | "col-3";
