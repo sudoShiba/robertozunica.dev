@@ -39,7 +39,7 @@ const Story: React.FC = () => {
         {visibleColumn === "col-1" && (
           <>
             <MultiStory title="Codefever VZW" date="September 2023 - Present">
-              <MultiStoryItem title="Teacher" date="Februari 2025 - Present">
+              <MultiStoryItem title="Teacher" date="Februari 2026 - Present">
                 I became a teacher at Codefever after being an teacher's aid for a while. I've taught HTML/CSS/JS.
               </MultiStoryItem>
               <MultiStoryItem title="Teacher's Aid" date="September 2023 - Present">
@@ -54,7 +54,7 @@ const Story: React.FC = () => {
               size={2}
             >
               <p>
-                I work on the Quivr frontend site (ReactTS) and app (React Native) I work on the Quivr app frontend site (ReactTS) and app (React Native)
+                At Quivr, I collaborate with a small team to develop and maintain the frontend of our app (React Native) and web application (ReactTS). I helped to fix many bugs and added features.
               </p>
               <Site url="https://quivr.be" />
             </StoryComponent>
