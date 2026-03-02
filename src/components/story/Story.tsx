@@ -137,16 +137,15 @@ const Story: React.FC = () => {
               <Site url="https://www.leuvenactueel.be/nieuws/leuven/de-lijn-bekroont-top-talenten-in-best-youth-developer-challenge?nid=17897" />
               <Site url="https://pub.be/nl/de-lijn-bekroont-toptalenten-in-best-youth-developer-challenge/" />
             </StoryComponent>
-            <StoryComponent
-              title="Youth Leader"
-              subtitle="KSA Kriko"
-              date="2023 - Present"
-              size={2}>
-              <p>
-                As a leader at KSA, I organize and guide activities for young people. I'm also the group's webmaster and have been responsible for coordinating a specific age group. I also have
-              </p>
+            <MultiStory title="KSA Kriko" date="2021 - 2025">
+              <MultiStoryItem title="Treasurer" date="2024 - 2025">
+                As treasurer at KSA Kriko, I managed the group's finances and budget.
+              </MultiStoryItem>
+              <MultiStoryItem title="Youth Leader" date="2023 - 2025">
+                As a leader at KSA, I organize and guide activities for young people. I'm also the group's webmaster and have been responsible for coordinating a specific age group.
+              </MultiStoryItem>
               <Site url="https://ksa-kriko.be" />
-            </StoryComponent>
+            </MultiStory>
             <StoryComponent
               title="Youth Camp Animator"
               subtitle="Kazou"
