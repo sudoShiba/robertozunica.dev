@@ -36,7 +36,7 @@ const Story: React.FC = () => {
         handleToggle={handleToggle}
         visibleColumn={visibleColumn} />
       <article className="story-wrapper">
-        {visibleColumn === "col-1" && (
+        {visibleColumn === "col-1" && ( // Work experience
           <>
             <MultiStory title="Codefever VZW" date="September 2023 - Present">
               <MultiStoryItem title="Teacher" date="Februari 2026 - Present">
@@ -70,7 +70,7 @@ const Story: React.FC = () => {
               <Site url="https://groen.be" />
             </StoryComponent>
           </>)}
-        {(visibleColumn !== "col-1" && visibleColumn !== "col-3") && (
+        {(visibleColumn !== "col-1" && visibleColumn !== "col-3") && ( // Education
           <>
             <StoryComponent
               title="Bachelor's Degree in Computer Science"
@@ -96,8 +96,22 @@ const Story: React.FC = () => {
             </StoryComponent>
           </>
         )}
-        {visibleColumn === "col-3" && (
+        {visibleColumn === "col-3" && ( // Achievements & more
           <>
+            <StoryComponent
+              title="Code Relay Winner"
+              subtitle="Proximus & 42 Belgium"
+              date="April 2026"
+              size={1}
+              image="assets/coderelay.jpg"
+              caption="Sverre and I recieving our prize"
+            >
+              <p>
+                Together with three fellow students <a href="https://www.linkedin.com/in/shahd-abuzubaida-0b749b327/" target="_blank">Shahd Abuzubaida</a>, <a href="https://www.linkedin.com/in/thibo-verstraete-062497276/" target="_blank">Thibo Verstraete</a> and <a href="https://www.linkedin.com/in/sverreleeman/" target="_blank">Sverre Leeman</a>, we won the Python Code Relay hosted by 42 Belgium during the Proximus Student Tech Experience Day on April 2. The competition was designed as a high-speed relay, testing our ability to think fast, communicate clearly, and build directly upon each other's code under tight deadlines. By maintaining a seamless workflow, our team achieved the leading performance of the workshop and was awarded the first-place prize.
+              </p>
+              <Site url="https://proximus.be" />
+              <Site url="https://42belgium.be" />
+            </StoryComponent>
             <StoryComponent
               title="BEST coding challenge winner"
               subtitle="BEST Leuven"

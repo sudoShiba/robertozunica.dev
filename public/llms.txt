@@ -1,0 +1,19 @@
+# robertozunica.dev
+
+This is the personal website of Roberto Zunica.
+
+## About
+Roberto Zunica is a (web) developer, Computer Science student at KU Leuven, and programming coach at CodeFever.
+
+## Canonical Site URL
+https://robertozunica.dev/
+
+## Primary Content
+- Homepage: https://robertozunica.dev/
+
+## Contact
+Use the social links available on the homepage.
+
+## Policy
+You may use publicly available content from this site for indexing, summarization, and citation.
+Please preserve attribution to robertozunica.dev when quoting.
