@@ -151,26 +151,15 @@ const Story: React.FC = () => {
               <Site url="https://www.leuvenactueel.be/nieuws/leuven/de-lijn-bekroont-top-talenten-in-best-youth-developer-challenge?nid=17897" />
               <Site url="https://pub.be/nl/de-lijn-bekroont-toptalenten-in-best-youth-developer-challenge/" />
             </StoryComponent>
-            <MultiStory title="KSA Kriko" date="2021 - 2025">
-              <MultiStoryItem title="Treasurer" date="2024 - 2025">
+            <MultiStory title="KSA Kriko" date="2021 - 2026">
+              <MultiStoryItem title="Treasurer" date="2024 - 2026">
                 As treasurer at KSA Kriko, I managed the group's finances and budget.
               </MultiStoryItem>
-              <MultiStoryItem title="Youth Leader" date="2023 - 2025">
-                As a leader at KSA, I organize and guide activities for young people. I'm also the group's webmaster and have been responsible for coordinating a specific age group.
+              <MultiStoryItem title="Youth Leader" date="2023 - 2026">
+                As a youth leader at KSA, I organize and guide activities for young people. I'm also the group's webmaster and have been responsible for coordinating a specific age group.
               </MultiStoryItem>
               <Site url="https://ksa-kriko.be" />
             </MultiStory>
-            <StoryComponent
-              title="Youth Camp Animator"
-              subtitle="Kazou"
-              date="2023 - Present"
-              image="assets/kazou.jpeg"
-              size={1}>
-              <p>
-                As a volunteer at Kazou, I help organize and supervise youth camps, focusing on creating a fun and safe environment for all participants. I also hold a certified youth animator's certificate recognized by the Flemish government.
-              </p>
-              <Site url="https://kazou.be" />
-            </StoryComponent>
           </>
         )}
       </article>
