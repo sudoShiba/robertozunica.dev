@@ -38,8 +38,28 @@ const Story: React.FC = () => {
       <article className="story-wrapper">
         {visibleColumn === "col-1" && ( // Work experience
           <>
+            <StoryComponent
+              title="Full-Stack Engineer Intern"
+              subtitle="DataCamp"
+              date="July 2026 - September 2026"
+              size={2}
+            >
+              <p>
+                During my internship as a Full-Stack Software Engineer on the Learner-Experience team at DataCamp, I worked on further developing the learning platform. I actively contributed to both the website and the mobile app, with responsibilities across the front-end and back-end.
+              </p>
+              <Site url="https://datacamp.com" />
+            </StoryComponent>
+            <MultiStory title="Quivr" date="November 2024 - Present">
+              <MultiStoryItem title="Treasurer" date="July 2026 - Present">
+                I serve as the treasurer for Student Innovations vzw.
+              </MultiStoryItem>
+              <MultiStoryItem title="Front-end developer" date="November 2024 - Present">
+                I work on the Quivr frontend site (ReactTS) and app (React Native). Quivr is the student app by and for students.
+              </MultiStoryItem>
+              <Site url="https://quivr.be" />
+            </MultiStory>
             <MultiStory title="Codefever VZW" date="September 2023 - Present">
-              <MultiStoryItem title="Teacher" date="Februari 2026 - Present">
+              <MultiStoryItem title="Teacher" date="February 2026 - Present">
                 I became a teacher at Codefever after being an teacher's aid for a while. I've taught HTML/CSS/JS.
               </MultiStoryItem>
               <MultiStoryItem title="Teacher's Aid" date="September 2023 - Present">
@@ -47,17 +67,6 @@ const Story: React.FC = () => {
               </MultiStoryItem>
               <Site url="https://codefever.be" />
             </MultiStory>
-            <StoryComponent
-              title="Frontend Developer"
-              subtitle="Quivr"
-              date="November 2024 - Present"
-              size={2}
-            >
-              <p>
-                At Quivr, I collaborate with a small team to develop and maintain the frontend of our app (React Native) and web application (ReactTS). I helped to fix many bugs and added features.
-              </p>
-              <Site url="https://quivr.be" />
-            </StoryComponent>
             <StoryComponent
               title="Intern"
               subtitle="Groen"
