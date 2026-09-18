@@ -10,7 +10,6 @@ export interface StoryComponentProps {
 
 export interface MultiStoryProps {
     title: string;
-    date?: string;
     children: React.ReactNode;
 }
 

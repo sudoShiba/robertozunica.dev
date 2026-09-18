@@ -49,7 +49,7 @@ const Story: React.FC = () => {
               </p>
               <Site url="https://datacamp.com" />
             </StoryComponent>
-            <MultiStory title="Quivr" date="November 2024 - Present">
+            <MultiStory title="Quivr">
               <MultiStoryItem title="Treasurer" date="July 2026 - Present">
                 I serve as the treasurer for Student Innovations vzw.
               </MultiStoryItem>
@@ -58,7 +58,7 @@ const Story: React.FC = () => {
               </MultiStoryItem>
               <Site url="https://quivr.be" />
             </MultiStory>
-            <MultiStory title="Codefever VZW" date="September 2023 - Present">
+            <MultiStory title="Codefever VZW">
               <MultiStoryItem title="Teacher" date="February 2026 - Present">
                 I became a teacher at Codefever after being an teacher's aid for a while. I've taught HTML/CSS/JS.
               </MultiStoryItem>
@@ -160,7 +160,7 @@ const Story: React.FC = () => {
               <Site url="https://www.leuvenactueel.be/nieuws/leuven/de-lijn-bekroont-top-talenten-in-best-youth-developer-challenge?nid=17897" />
               <Site url="https://pub.be/nl/de-lijn-bekroont-toptalenten-in-best-youth-developer-challenge/" />
             </StoryComponent>
-            <MultiStory title="KSA Kriko" date="2021 - 2026">
+            <MultiStory title="KSA Kriko">
               <MultiStoryItem title="Treasurer" date="2024 - 2026">
                 As treasurer at KSA Kriko, I managed the group's finances and budget.
               </MultiStoryItem>
