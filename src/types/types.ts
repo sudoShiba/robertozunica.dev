@@ -40,3 +40,30 @@ export const columnMap: Record<ColumnKey, Columns> = {
   "center": "col-2",
   "right": "col-3"
 } as const
+
+export interface RichTextProps {
+    text: string;
+}
+
+export interface StoryEntry {
+    type: "single";
+    title: string;
+    subtitle?: string;
+    date?: string;
+    size: 1 | 2 | 3;
+    image?: string;
+    caption?: string;
+    text: string;
+    sites: string[];
+}
+
+export interface MultiStoryEntry {
+    type: "multi";
+    title: string;
+    items: { title: string; date?: string; text: string }[];
+    sites: string[];
+}
+
+export type StoryItem = StoryEntry | MultiStoryEntry
+
+export type StoryColumns = Record<Columns, StoryItem[]>
