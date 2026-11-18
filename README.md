@@ -4,4 +4,5 @@
 ## Useful commands
 * Development build: `npm run dev`
 * Lint: `npm run lint`
+* Build the CV (needs LaTeX): edit `cv/curriculumvitae.tex`, then `npm run build:cv` (PDF goes to `public/assets/`)
 
