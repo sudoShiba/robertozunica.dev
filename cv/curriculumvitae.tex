@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in LaTeX, based on Jake Gutierrez's template
+% Build: pdflatex curriculumvitae.tex (twice)
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\hypersetup{
+  pdftitle={Roberto Zunica - CV},
+  pdfauthor={Roberto Zunica}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% {Organization}{Dates}{Role}{Location}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% {Second role/degree}{Dates}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% {Name | tech}{Link or date}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Roberto Zunica} \\ \vspace{1pt}
+    \small Bruges \& Leuven $|$
+    \href{mailto:me@robertozunica.dev}{\underline{me@robertozunica.dev}} $|$
+    \href{https://robertozunica.dev}{\underline{robertozunica.dev}} $|$
+    \href{https://github.com/sudoShiba}{\underline{github.com/sudoShiba}} $|$
+    \href{https://www.linkedin.com/in/robertozunica}{\underline{linkedin.com/in/robertozunica}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KU Leuven}{Leuven, Belgium}
+      {Master's in Computer Science}{Sept. 2026 -- Present}
+    \resumeSubSubheading
+      {Bachelor of Science in Computer Science}{Sept. 2024 -- June 2027 (expected)}
+      \resumeItemListStart
+        \resumeItem{Peer-Assisted Learning (PAL) tutor for first-year students.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://shiba.house}{Shiba.house}}{Oct. 2026 -- Present}
+      {Freelance Developer}{Bruges \& Leuven, Belgium}
+      \resumeItemListStart
+        \resumeItem{Build custom websites, web apps, internal tools and other software.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DataCamp}{July 2026 -- Sept. 2026}
+      {Full-Stack Software Engineer Intern, Learner Experience team}{Leuven, Belgium}
+      \resumeItemListStart
+        \resumeItem{Built features for DataCamp's learning platform on web and mobile, across front end and back end.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Groen}{Aug. 2025 -- Sept. 2025}
+      {Student Developer}{Brussels, Belgium}
+      \resumeItemListStart
+        \resumeItem{Helped design and build an interactive web platform that gives insight into citizens' voting behavior.}
+        \resumeItem{Processed voting data with Python into SQL; built the app with Alpine.js and PHP, installable as a PWA.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quivr \textit{\small(Student Innovations vzw)}}{Nov. 2024 -- Present}
+      {Student-run app for Flemish students, with over 60,000 users}{Leuven, Belgium}
+      \resumeItemListStart
+        \resumeItem{\textbf{Front-End Coordinator} \textit{(since July 2026)}: coordinate the front-end work on the website and the app.}
+        \resumeItem{\textbf{Front-End Developer}: build the website in React (TypeScript) and the app in React Native.}
+        \resumeItem{\textbf{Infrastructure Team} \textit{(since July 2026)}: help run Quivr's Kubernetes clusters (Flux, GitOps).}
+        \resumeItem{\textbf{Treasurer} \textit{(since July 2026)}: manage the association's finances and take part in general board duties.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CodeFever}{Sept. 2023 -- Present}
+      {Programming Instructor}{Bruges, Belgium}
+      \resumeItemListStart
+        \resumeItem{Teach HTML, CSS and JavaScript to kids and teens as lead instructor (since Feb. 2026).}
+        \resumeItem{Assist in Scratch, Python and web development classes (since Sept. 2023).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Penny} $|$ \emph{PostgreSQL, Docker, Caddy}}{\href{https://getpenny.be}{\underline{getpenny.be}}}
+      \resumeItemListStart
+        \resumeItem{A web app for finances and self-serve bars in youth associations.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{L-Interpreter} $|$ \emph{Haskell, WebAssembly}}{\href{https://l.robertozunica.dev}{\underline{l.robertozunica.dev}}}
+      \resumeItemListStart
+        \resumeItem{Runs Martin Davis's L (a minimal language from computability theory) step by step in the browser.}
+        \resumeItem{Encodes any program as a unique number and decodes any number back into its program, following Davis.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Self-Hosted Server} $|$ \emph{Proxmox, LXC, Docker, Caddy, LUKS}}{}
+      \resumeItemListStart
+        \resumeItem{Run a Proxmox server that hosts Penny and my other apps in LXC containers and Docker, behind Caddy.}
+        \resumeItem{Added LUKS encryption, nightly offsite backups, hardware upgrades.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Honors \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  \item \small
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    Winner, Python Code Relay at the Proximus Student Tech Experience Day & 2026 \\
+    Top scorer, CIO Challenge by BNP Paribas Fortis (Editx) & 2026 \\
+    Top scorer, Future of IT Leaders in Belgium: Data \& AI Challenge (Editx) & 2026 \\
+    Best beginner team, BEST-NMBS Coding Challenge (BEST Leuven) & 2024 \\
+    Winner, Best Youth Developer Challenge by De Lijn & 2024 \\
+  \end{tabular*}
+ \end{itemize}
+
+%-----------ACTIVITIES-----------
+\section{Leadership \& Activities}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  \item \small
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{KSA Kriko} (youth movement): youth leader, treasurer and webmaster & 2023 -- 2026 \\
+    \textbf{ULYSSIS} (KU Leuven student organization for open source): member & Oct. 2024 -- Aug. 2026 \\
+  \end{tabular*}
+ \end{itemize}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Go, Python, SQL, Java, Kotlin, C, Haskell} \\
+     \textbf{Frameworks}{: React, React Native, Alpine.js} \\
+     \textbf{Infrastructure \& Tools}{: Linux, Proxmox, Docker, Caddy, PostgreSQL, Git, GitHub Actions, Cloudflare} \\
+     \textbf{Spoken Languages}{: Dutch (native), English (fluent), French (intermediate), German (basic), Italian (basic)}
+    }}
+ \end{itemize}
+
+\end{document}
