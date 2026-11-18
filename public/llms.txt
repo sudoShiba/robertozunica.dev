@@ -3,13 +3,14 @@
 This is the personal website of Roberto Zunica.
 
 ## About
-Roberto Zunica is a (web) developer, Computer Science student at KU Leuven, and programming coach at CodeFever.
+Roberto Zunica is a developer and Computer Science student at KU Leuven. He works on the Quivr student app, builds software for clients as Shiba.house, and teaches programming at CodeFever.
 
 ## Canonical Site URL
 https://robertozunica.dev/
 
 ## Primary Content
 - Homepage: https://robertozunica.dev/
+- CV (PDF): https://robertozunica.dev/assets/curriculumvitae.pdf
 
 ## Contact
 Use the social links available on the homepage.
