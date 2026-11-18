@@ -1,0 +1,53 @@
+name: Build CV
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - cv/curriculumvitae.tex
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # cv/curriculumvitae.hash is written by `npm run build:cv`.
+      # If it matches the .tex, the PDF in public/assets is already up to date.
+      - name: Check if the PDF is up to date
+        id: check
+        run: |
+          current=$(shasum -a 256 cv/curriculumvitae.tex | cut -d ' ' -f 1)
+          built=$(cat cv/curriculumvitae.hash 2>/dev/null || true)
+          if [ "$current" = "$built" ]; then
+            echo "PDF already built from this .tex, skipping"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Compile
+        if: steps.check.outputs.skip != 'true'
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: curriculumvitae.tex
+          working_directory: cv
+
+      - name: Commit PDF
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          cp cv/curriculumvitae.pdf public/assets/curriculumvitae.pdf
+          shasum -a 256 cv/curriculumvitae.tex | cut -d ' ' -f 1 > cv/curriculumvitae.hash
+          if git diff --quiet -- public/assets/curriculumvitae.pdf cv/curriculumvitae.hash; then
+            echo "PDF unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/curriculumvitae.pdf cv/curriculumvitae.hash
+          git commit -m "Rebuild CV PDF"
+          git push
